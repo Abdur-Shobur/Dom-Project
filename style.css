@@ -38,6 +38,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  padding: 20px;
+}
 
 h1,
 h2,
@@ -46,7 +49,7 @@ h4,
 h5,
 h6 {
   /* font-family: "Chakra Petch", sans-serif; */
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 p,
 span,
@@ -54,7 +57,7 @@ code,
 a,
 input,
 form {
-  font-family: "ABeeZee", sans-serif;
+  font-family: 'ABeeZee', sans-serif;
 }
 h1 {
   text-align: center;
@@ -75,6 +78,7 @@ code {
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 20px;
 }
 .list {
   color: rgb(0, 31, 59);
@@ -85,6 +89,7 @@ code {
 }
 .project {
   width: 30%;
+  min-width: 540px;
 }
 .project-one {
   margin: 50px auto;
@@ -132,8 +137,8 @@ h2 {
   margin: 10px 0;
   color: #220e61;
 }
-.num1[type="text"],
-.num2[type="text"] {
+.num1[type='text'],
+.num2[type='text'] {
   border: 2px solid #220e61;
   border-radius: 4px;
 }
@@ -155,6 +160,11 @@ form {
   text-align: center;
 }
 
+@media (max-width: 1150px) {
+  .project {
+    min-width: 90%;
+  }
+}
 @media (max-width: 600px) {
   .num1,
   .num2 {
@@ -192,9 +202,9 @@ form {
   margin-bottom: 1.5rem;
 }
 .img-container18::after {
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  content: "\f10e";
+  content: '\f10e';
   position: absolute;
   top: 0;
   left: 0;
@@ -208,7 +218,7 @@ form {
   color: var(--clr-white);
 }
 .img-container18::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   background: var(--clr-primary-5);
