@@ -160,6 +160,11 @@ form {
   text-align: center;
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 1150px) {
   .project {
     min-width: 90%;
