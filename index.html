@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Montserrat+Alternates:ital,wght@0,300;0,400;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="flex">
+
+
+    <!-- project 01 -->
+    <div class="project">
+      <h1 class="list">Project 01</h1>
+      <div class="project-one">
+        <h2 class="">Date Method</h2>
+        <h1 id="h1"></h1>
+        <h1 id="h2"></h1>
+      </div>
+    </div>
+
+    <!-- project 02 -->
+    <div class="project">
+      <h1 class="list">Project 02</h1>
+      <div class="project-one">
+        <h2 class="">Lotary Method</h2>
+        <p>
+          <code>Click the Button</code> and input number 1 to 10 <br />
+          if you are input right number you will <code>Win</code> or
+          <code>Faild</code>.
+        </p>
+        <h1 id="h3"></h1>
+        <h1 id="h4"></h1>
+        <div class="buttons">
+          <button onclick="myFun01()" class="btn1" id="btn1">Click Here</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- project 03 -->
+    <div class="project">
+      <h1 class="list">Project 03</h1>
+      <div class="project-one">
+        <h2 class="">Multiply & Divide</h2>
+        <form>
+          1st Number : <input type="text" id="num03" class="num1" /><br />
+          2nd Number: <input type="text" id="num02" class="num2" /><br />
+          <div class="buttons">
+            <input
+              type="button"
+              class="btn1"
+              onClick="multiplyBy01()"
+              value="Multiply"
+            />
+            <input
+              type="button"
+              class="btn1"
+              onClick="divideBy02()"
+              value="Divide"
+            />
+            <input
+              type="button"
+              class="btn1"
+              onClick="clearBy01()"
+              value="Clear"
+            />
+          </div>
+        </form>
+        <p>
+          The Result is :
+          <span id="result03"></span>
+        </p>
+      </div>
+    </div>
+ </div>
+ <div class="flex">
+    <!-- project 04 -->
+    <div class="project">
+      <h1 class="list">Project 04</h1>
+      <div class="project-one">
+        <h2 class="">Celsius To Fahrenheit</h2>
+        <form>
+          Input Your Number :
+          <input type="text" id="num04" class="num1" /><br />
+
+          <div class="buttons">
+            <input
+              type="button"
+              class="btn1"
+              onClick="cToF41()"
+              value="Cel To F"
+            />
+            <input
+              type="button"
+              class="btn1"
+              onClick="fToC41()"
+              value="Far To Cel"
+            />
+            <input
+              type="button"
+              class="btn1"
+              onClick="clearBy41()"
+              value="Clear"
+            />
+          </div>
+        </form>
+        <p>
+          The Result is :
+          <span id="result04"></span>
+        </p>
+      </div>
+    </div>
+
+    <!-- project 05 -->
+    <div class="project">
+      <h1 class="list">Project 05</h1>
+      <div class="project-one">
+        <h2 class="">Got Your File Extention</h2>
+        <p>
+          If you input File Extention name like <code>index.html</code><br />
+          You will got only Extention like
+          <code>html</code>
+        </p>
+        <form>
+          Input Your File Name :
+          <input
+            type="text"
+            placeholder="index.html"
+            id="num05"
+            class="num1"
+          /><br />
+
+          <div class="buttons">
+            <input
+              type="button"
+              class="btn1"
+              onClick="toExt()"
+              value="Your FIle Extention"
+            />
+            <input
+              type="button"
+              class="btn1"
+              onClick="clearBy51()"
+              value="Clear"
+            />
+          </div>
+        </form>
+        <p>
+          The Extention is :
+          <span id="result05"></span>
+        </p>
+      </div>
+    </div>
+
+    <!-- project 06 -->
+    <div class="project">
+      <h1 class="list">Project 06</h1>
+      <div class="project-one">
+        <h2 class="">Difference</h2>
+        <p>
+          If you input <code>less then 20</code> you will got only defferent
+          <code>20</code><br />
+          or input <code>greater then20</code> You will got<code>dubble</code>
+          difference about <code>20</code>.
+        </p>
+        <form>
+          Input Your Number:
+          <input
+            type="text"
+            placeholder="< 20 >"
+            id="num06"
+            class="num1"
+          /><br />
+
+          <div class="buttons">
+            <input
+              type="button"
+              class="btn1"
+              onClick="toSub6()"
+              value="Submit"
+            />
+            <input
+              type="button"
+              class="btn1"
+              onClick="clearBy61()"
+              value="Clear"
+            />
+          </div>
+        </form>
+        <p>
+          The Result is :
+          <span id="result06"></span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="flex">
+    <!-- project 07 -->
+    <div class="project">
+      <h1 class="list">Project 07</h1>
+      <div class="project-one">
+        <h2 class="">Difference</h2>
+        <p>
+          If you input <code>same</code> value <code>(X,Y)</code> you will got
+          <code>3*(X+Y)</code> <br />
+          or You will got only <code>(X+Y)</code>.
+        </p>
+        <form>
+          Input Your Number X:
+          <input
+            type="text"
+            placeholder="Input Here"
+            id="num07"
+            class="num1"
+          /><br />
+          Input Your Number Y:
+          <input
+            type="text"
+            placeholder="Input Here"
+            id="num07_2"
+            class="num2"
+          /><br />
+
+          <div class="buttons">
+            <input
+              type="button"
+              class="btn1"
+              onClick="toSub07()"
+              value="Submit"
+            />
+            <input
+              type="button"
+              class="btn1"
+              onClick="clearBy07()"
+              value="Clear"
+            />
+          </div>
+        </form>
+        <p>
+          The Result is :
+          <span id="result07"></span>
+        </p>
+      </div>
+    </div>
+
+    <!-- project 08 -->
+    <div class="project">
+      <h1 class="list">Project 08</h1>
+      <div class="project-one">
+        <h2 class="">Difference</h2>
+        <p>
+          If you input <code>50</code> value (X,Y) you will got
+          <code>True</code> <br />
+          also input <code>(X+Y=50)</code> You will got
+          <code>True</code> otherwise <code>Fase</code>
+        </p>
+        <form>
+          Input Your Number X:
+          <input
+            type="text"
+            placeholder="Input Here"
+            id="num08"
+            class="num1"
+          /><br />
+          Input Your Number Y:
+          <input
+            type="text"
+            placeholder="Input Here"
+            id="num08_2"
+            class="num2"
+          /><br />
+
+          <div class="buttons">
+            <input
+              type="button"
+              class="btn1"
+              onClick="toSub08()"
+              value="Submit"
+            />
+            <input
+              type="button"
+              class="btn1"
+              onClick="clearBy08()"
+              value="Clear"
+            />
+          </div>
+        </form>
+        <p>
+          The Result is :
+          <span id="result08"></span>
+        </p>
+      </div>
+    </div>
+
+    <!-- project 09 -->
+    <div class="project">
+      <h1 class="list">Project 09</h1>
+      <div class="project-one">
+        <h2 class="">Difference</h2>
+        <p>
+          If you input a number that is less then <code>20</code> will be
+          true<br /><code>(100 - X) <= 20 || (400 - X) <= 20</code>
+        </p>
+        <form>
+          Input Your Number X:
+          <input
+            type="text"
+            placeholder="Input Here"
+            id="num09"
+            class="num1"
+          /><br />
+
+          <div class="buttons">
+            <input
+              type="button"
+              class="btn1"
+              onClick="toSub09()"
+              value="Submit"
+            />
+            <input
+              type="button"
+              class="btn1"
+              onClick="clearBy09()"
+              value="Clear"
+            />
+          </div>
+        </form>
+        <p>
+          The Result is :
+          <span id="result09"></span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="flex">
+    <!-- project 10 -->
+    <div class="project">
+      <h1 class="list">Project 10</h1>
+      <div class="project-one">
+        <h2 class="">Difference</h2>
+        <p>
+          <code>Py</code> is special Keyword. if you want to type
+          <code>Python</code>
+          didn't type Py. Just type <code>thon</code>.
+        </p>
+        <form>
+          Input Your Number X:
+          <input
+            type="text"
+            placeholder="Input Here"
+            id="num10"
+            class="num1"
+          /><br />
+
+          <div class="buttons">
+            <input
+              type="button"
+              class="btn1"
+              onClick="toSub10()"
+              value="Submit"
+            />
+            <input
+              type="button"
+              class="btn1"
+              onClick="clearBy10()"
+              value="Clear"
+            />
+          </div>
+        </form>
+        <p>
+          The Result is :
+          <span id="result10"></span>
+        </p>
+      </div>
+    </div>
+
+    <!-- project 11 -->
+    <div class="project">
+      <h1 class="list">Project 11</h1>
+      <div class="project-one">
+        <h2 class="">Remove Word</h2>
+        <p>
+          You can remove word in your text. <br />
+          first input <code>text</code> a then input a <code>number</code>
+          <br />remember the First leter start with <code>0</code>
+        </p>
+        <form>
+          Input Your Text:
+          <input
+            type="text"
+            placeholder="Input Here"
+            id="num11"
+            class="num1"
+          /><br />
+          Input Your Number:
+          <input
+            type="text"
+            placeholder="Input Here"
+            id="num11_2"
+            class="num2"
+          /><br />
+
+          <div class="buttons">
+            <input
+              type="button"
+              class="btn1"
+              onClick="toSub11()"
+              value="Submit"
+            />
+            <input
+              type="button"
+              class="btn1"
+              onClick="clearBy11()"
+              value="Clear"
+            />
+          </div>
+        </form>
+        <p>
+          The Result is :
+          <span id="result11"></span>
+        </p>
+      </div>
+    </div>
+
+    <!-- project 12 -->
+    <div class="project">
+      <h1 class="list">Project 12</h1>
+      <div class="project-one">
+        <h2 class="">Change word both side</h2>
+        <p>
+          The <code>first letter</code> is going to last and
+          <code>last letter</code> come to fast.
+        </p>
+        <form>
+          Input Your Text:
+          <input
+            type="text"
+            placeholder="Input Here"
+            id="num12"
+            class="num1"
+          /><br />
+
+          <div class="buttons">
+            <input
+              type="button"
+              class="btn1"
+              onClick="toSub12()"
+              value="Submit"
+            />
+            <input
+              type="button"
+              class="btn1"
+              onClick="clearBy12()"
+              value="Clear"
+            />
+          </div>
+        </form>
+        <p>
+          The Result is :
+          <span id="result12"></span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="flex">
+    <!-- project 13 -->
+    <div class="project">
+      <h1 class="list">Project 13</h1>
+      <div class="project-one">
+        <h2 class="">Height Number</h2>
+        <p></p>
+        <form>
+          Input Your Text X:
+          <input
+            type="text"
+            placeholder="Input Here X"
+            id="num13A"
+            class="num1"
+          /><br />
+          Input Your Text Y:
+          <input
+            type="text"
+            placeholder="Input Here Y"
+            id="num13B"
+            class="num1"
+          /><br />
+          Input Your Text Z:
+          <input
+            type="text"
+            placeholder="Input Here Z"
+            id="num13C"
+            class="num1"
+          /><br />
+
+          <div class="buttons">
+            <input
+              type="button"
+              class="btn1"
+              onClick="toSub13()"
+              value="Submit"
+            />
+            <input
+              type="button"
+              class="btn1"
+              onClick="clearBy13()"
+              value="Clear"
+            />
+          </div>
+        </form>
+        <p>
+          The Result is :
+          <span id="result13"></span>
+        </p>
+      </div>
+    </div>
+
+   <!-- project 14  -->
+     <div class="project">
+      <h1 class="list">Project 14</h1>
+      <div class="project-one">
+        <h2 class=""></h2>
+        <p></p>
+        <code class="my-code">
+          function myFun(x, y) { if ((x >= 50 && x <= 99) || (y >= 10 && y <= 99)) {
+          return true; } else { return false; } } console.log(myFun(10, 99));
+        </code>
+        </p>
+      </div>
+    </div>
+
+      <!-- project 15  -->
+      <div class="project">
+        <h1 class="list">Project 15</h1>
+        <div class="project-one" id="pro-15">
+          <h2 class="">Change Background 4 Color Randomly</h2>
+          <p>
+            The Color is :
+            <span id="result15">#ffffff</span>
+          </p>
+          <div class="buttons">
+            <input
+            type="button"
+            class="btn1"
+            onClick="btn15()"
+            value="Submit"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex">
+
+          <!-- project 16  -->
+    <div class="project">
+      <h1 class="list">Project 16</h1>
+      <div class="project-one" id="pro-16">
+        <h2 class="">Change Background  Color Randomly </h2>
+        <p>
+          The Color is :
+          <span id="result16">#ffffff</span>
+        </p>
+        <div class="buttons">
+          <input
+          type="button"
+          class="btn1"
+          onClick="btn16()"
+          value="Submit"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- project 17  -->
+    <div class="project">
+      <h1 class="list">Project 17</h1>
+      <div class="project-one" id="pro-16">
+        <h2 class="">Counter </h2>
+        <p>
+          Click the Butoon Increase or Decrease Number
+        </p>
+        <h1 style="font-size: 50px; color: blue;">
+          <span  id="value17">0</span>
+        </h1>
+      <div class="button-container">
+        <button class="btn1 btn17 decrease">Drcrease</button>
+        <button class="btn1 btn17 reset">Reset</button>
+        <button class="btn1 btn17 increase">Increase</button>
+      </div>
+      </div>
+    </div>
+
+    <!-- project 18 -->
+    <div class="project">
+      <h1 class="list">Project 18</h1>
+      <div class="project-one" id="pro-16">
+        <h2>Curosole</h2>
+        <main>
+          <div class="container">
+            <article class="review">
+              <div class="img-container18">
+                <img src="./person-1.jpeg" id="person-img18" alt="" />
+              </div>
+              <h4 id="author18">Sara honb</h4>
+              <p id="job18">Ux desinger</p>
+              <p id="info18">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                architecto cum pariatur corrupti quos velit sapiente cumque quae
+                doloremque non in numquam, voluptates labore nostrum.
+              </p>
+              <div class="button-container18">
+                <button class="prev-btn18">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="next-btn18">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+              <button class="random-btn18">surprice me</button>
+            </article>
+          </div>
+        </main>
+    
+      </div>
+    </div>
+    <script src="my.js"></script>
+  </body>
+</html>
